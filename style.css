@@ -1,0 +1,316 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    
+    font-family:'Space Grotesk', sans-serif;
+    letter-spacing: 1px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.circle-container{
+    display: flex;
+    margin-left: -70%;
+    margin-top:5.5%;
+    
+}
+.circle-big{
+    width: 3.3vw;
+    height: 3.3vw;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 0.97vw;
+}
+.circle-little{
+    width: 1.4vw;
+    height: 1.4vw;
+    border-radius: 50%;
+    border: solid 1px white;
+    margin-top: 19%;
+}
+input{
+    border: solid 1px hsl(270, 3%, 87%);
+    border-radius: 0.5vw;
+    height: 3.3vw;
+    font-size: 1.3vw;
+    padding-left: 1vw;
+
+}
+.left{
+    background-image: url(./images/bg-main-desktop.png);
+    height: 61.6vw;
+    width: 33.5%;
+    background-repeat: no-repeat;
+}
+.card-back{
+    margin-top: 7.8%;
+    margin-left: 53%;
+    background-image:url(./images/bg-card-back.png);
+    justify-content:flex-end;
+    align-items: center;
+    color: white;
+}
+.card-cvc{
+    margin-right:19%;
+    font-size: 1.3vw;
+}
+.card{
+    background-size: contain;
+    width: 100%;
+    height: 16.8vw;
+    border-radius: 1vw;
+    color: white;
+    display: flex;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+.card-name-p{
+    margin-top: -1%;
+    margin-left: -10%;
+    font-size: 1.03vw;
+}
+
+.card-front{
+    margin-top: 38.4%;
+    margin-left: 33.8%;
+    background-image:url(./images/bg-card-front.png);
+    flex-direction: column;
+    align-items: center;
+    
+}
+.card-age-name{
+    display: flex;
+    margin-left: -6%;
+    margin-top: 6.8%;
+    width: 66.5%;
+    justify-content: space-between;
+}
+.cardholder-name-container{
+    margin-bottom: 6%;
+}
+.card-year-container{
+    display: flex;
+    margin-right: -6%;
+    font-size: 1vw;
+}
+.right{
+   display: flex;
+    margin: 0 auto;
+   
+}
+
+.form{
+    margin-top: 32%;
+    margin-left: 34.5%;
+    width: 45%;
+   
+    margin-right: 1%;
+}
+.card-title{
+    font-size: 0.9vw;
+    font-weight: 600;
+    margin-block-start:0.8em;
+    margin-block-end: 0.5em;
+    
+ }
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4.4%;
+    width: 100%;
+}
+.card-number-p{
+    margin-top: 14.4%;
+    margin-left: -9%;
+    font-size: 1.85vw;
+    letter-spacing:0.3vw;
+}
+.error-card{
+    color: red;
+    font-size: 0.8vw;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    width: 6.8vw;
+}
+
+.colomns-month-and-year{
+    width: 49.7%;
+}
+.month{
+    width: 44%;
+    margin-left: 1%;
+}
+.year{
+ width: 44%;
+ margin-right: 7.6%;
+}
+
+.colmns-cvc{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.inputs-contain{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.cvc{
+    width: 100%;
+}
+button{
+    width: 100%;
+    height: 3.8vw;
+    border-radius: 0.6vw;
+    margin-top: 10%;
+    background-color:hsl(278, 68%, 11%);
+    color: white;
+    letter-spacing: 0.1vw;
+    font-size: 1.2vw;
+}
+.card-number{
+    width:100%;
+}
+.cardholder-name{
+    width:100%;
+   
+}
+.submit-form{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+    width: 50vw;
+    margin-top: 0%;
+    margin-left: 48%;
+}
+h2{margin-top: 5.9%;
+    padding-bottom: 5%;
+    letter-spacing: 0.17vw;
+}
+.img{
+    background-image: url(./images/icon-complete.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 21%;
+    height: 11%;
+}
+.submit-p{
+ margin-bottom: 3%;
+}
+
+@media screen and (max-width : 375px) {
+   .wrapper{
+    display: flex;
+    flex-direction: column;
+   }
+   .left{
+    background-image: url(./images/bg-main-mobile.png);
+    width: 100%;
+    height: 64vw;
+
+   }
+   .circle-container{
+    display: flex;
+    margin-left: -65%;
+    margin-top:5.5%;
+    
+}
+.circle-big{
+    width: 8vw;
+    height: 8vw;
+    margin-right: 2vw;
+}
+.circle-little{
+    width: 4vw;
+    height: 4vw;
+ 
+    margin-top: 19%;}
+
+   .card{
+    width: 76.9%;
+    height: 50vw;
+   }
+   .card-front{
+    margin: 33.8%;
+    margin-left: 4%;
+    position: relative;
+    z-index: 1;
+   }
+   .card-back{
+   margin-top: -109%;
+   margin-left: 19.6%;
+   z-index: 2;
+   }
+
+  .card-number-p{
+    margin-top: 13%;
+    margin-left: -3%;
+    font-size: 5.3vw;
+    letter-spacing: 0.3vw;
+
+  }
+  .card-name-p{
+    font-size: 2.3vw;
+  }
+  .card-year-container{
+    margin-top: -2%;
+    margin-right: -16.5%;
+    font-size: 2.4vw;
+  }
+  .card-cvc{
+    font-size: 2.5vw;
+    margin-top: -10%;
+    margin-right: 14.5%;
+  }
+   .wrapper-right{
+   margin-left: 25px;
+   }
+   .form{
+    margin-top:27%;
+    margin-left: 0%;
+    width: 93%;
+   }
+   .card-title{
+    font-size: 3vw;
+   }
+   input{
+    height: 12.8vw;
+    font-size: 5vw;
+   }
+   button{
+    height: 13vw;
+    font-size: 4.5vw;
+   }
+   .img{
+    width: 29%;
+    height: 21vw;
+
+   }
+   .submit-form{
+    margin-top: 35%;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+    flex-wrap: nowrap;
+   }
+   h2{
+    margin-top: 12%;
+    font-size: 191%;
+    padding-bottom: 12%;
+   }
+   .continue{
+    margin-top: 9%;
+    height: 14vw;
+    width: 120%;
+    border-radius: 2vw;
+   }
+}
